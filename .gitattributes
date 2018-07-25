@@ -1,2 +1,4 @@
 # Auto detect text files and perform LF normalization
-* text=php
+* text=auto
+project-docs/* linguist-documentation
+

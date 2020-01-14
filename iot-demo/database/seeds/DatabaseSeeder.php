@@ -42,8 +42,8 @@ class UsersTableSeeder extends Seeder
         DB::table('users')->delete();
  
         User::create([
-            'name' => 'YANAGI tateo',
-            'email' => 'yanagi@soarcloud.com',
+            'name' => 'YANAGI',
+            'email' => 'xxx@gmail.com',
             'password' => bcrypt('yanagi')
         ]);
     }
@@ -61,7 +61,7 @@ class BuildingsTableSeeder extends Seeder
         for ($i = 0; $i < 32; $i++) {
             $building = new Building([
                 'project_name' => $faker->city(),
-                'user_name' => 'YANAGI Tateo',
+                'user_name' => 'YANAGI',
                 'status' => '点検対象',
                 'b_data4' => 'data4',
                 'b_data5' => 'data5',
@@ -98,7 +98,7 @@ class HousesTableSeeder extends Seeder
         for ($i = 0; $i < 32; $i++) {
             $house = new House([
                 'project_name' => $faker->city(),
-                'user_name' => 'YANAGI Tateo',
+                'user_name' => 'YANAGI',
                 'status' => '点検対象',
                 'h_data4' => 'data4',
                 'h_data5' => 'data5',
